@@ -1,0 +1,6 @@
+notify-send 'Syncronization started' 'please wait'
+cd /home/
+aws s3 sync . s3://<s3buccket/folder>
+aws s3 sync s3://<s3buccket/folder>  .
+
+notify-send 'Syncronization Completed' 
